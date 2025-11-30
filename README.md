@@ -1,5 +1,8 @@
 # 🚀 Windows Setup Guide for Google Agent Development Kit 
 
+> [!NOTE]
+> For Mac: go to: [README_mac.md](README_mac.md)
+
 This guide walks you through setting up Python, IntelliJ, and required tools on Windows for working with the Google Agent Development Kit (ADK).
 
 ---
