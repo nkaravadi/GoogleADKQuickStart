@@ -29,9 +29,9 @@ PYENV_ROOT=%USERPROFILE%\.pyenv\pyenv-win
 PYENV_HOME=%USERPROFILE%\.pyenv\pyenv-win
 ```
 
-### 3. Basic Tools & Python
+## 3. Basic Tools & Python
 
-#### 3.1 Notepad++, Git
+### 3.1 Notepad++, Git
 ```bat
 # Notepad++
 winget install notepad++
@@ -41,7 +41,7 @@ winget install Git.Git
 
 ```
 
-#### 3.1 Python Installation
+### 3.2 Python Installation
 
 We're using a slightly older version to avoid issue with Google ADK with newer versions
 Pyenv lets you pick and choose from multiple versions of python if you that capability
@@ -62,7 +62,7 @@ Output should be
 Python 3.11.9
 ```
 
-### 4. Intellij Idea CE
+## 4. Intellij Idea CE
 ```bat
 winget install JetBrains.IntelliJIDEA.Community
 ```
@@ -71,7 +71,7 @@ After installation:
 - Open IntelliJ.
 - Install the Python plugin
 
-### 5. Project Setup with Virtual Environment
+## 5. Project Setup with Virtual Environment
 
 Virtual envs isolate your installed packages from other projects
 Lets create one for the adk called adkenv
@@ -97,7 +97,7 @@ Check that the prompt looks like:
 (adkenv) C:\Users\karav\google-adk-projects>
 ```
 
-### 6. Install required packages
+## 6. Install required packages
 
 In adkenv's cope run this:
 
@@ -108,14 +108,21 @@ pip install torch torchvision torchaudio
 pip install litellm
 ```
 
-### 7. Example Code
+## 7. Example Code
 In intellij clone this repo to create a new project
 
 ```bat
 https://github.com/nkaravadi/GoogleADKQuickStart
 ```
 
-### 8. To run these sample you will need a .env file in each of the sub-projects
-You can obtain your API key from:
+## 8. To run these sample you will need a .env file in each of the sub-projects
 
+.env file has:
+```properties
+
+GOOGLE_GENAI_USE_VERTEXAI=0
+GOOGLE_API_KEY=<API-KEY>
+```
+
+You can obtain your API key from:
 👉 [Google AI Studio](https://aistudio.google.com/app/api-keys)
