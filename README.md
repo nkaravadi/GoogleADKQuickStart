@@ -128,4 +128,10 @@ GOOGLE_API_KEY=<API-KEY>
 ```
 
 You can obtain your API key from:
-👉 [Google AI Studio](https://aistudio.google.com/app/api-keys)
+
+| API Key                                                             | Whats available                                                                                                                                         |
+|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 👉 [Google AI Studio Keys](https://aistudio.google.com/app/api-keys) | There is a free tier: <br>https://ai.google.dev/gemini-api/docs/pricing                                                                                 |
+| 👉 [Open API Keys](https://platform.openai.com/api-keys)            | https://platform.openai.com/settings/organization/billing/overview <br> Free tier rate limits: https://platform.openai.com/settings/organization/limits |
+| 👉 [Claude API Keys](https://platform.claude.com/settings/keys)     | There is a free tier: <br>https://platform.claude.com/settings/limits                                                                                   |
+

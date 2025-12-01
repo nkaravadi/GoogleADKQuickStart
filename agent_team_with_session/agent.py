@@ -17,11 +17,20 @@ from google.genai import types # For creating message Content/Parts
 import warnings
 #Filter out warnings
 warnings.filterwarnings("ignore")
-
-
 import logging
 logging.basicConfig(level=logging.ERROR)
 print("Libraries imported successfully.")
+
+############################
+## NEW FOR SESSION
+############################
+from google.adk.sessions import InMemorySessionService
+# Create a NEW session service instance for this state demonstration
+session_service_stateful = InMemorySessionService()
+print("✅ New InMemorySessionService created for state demonstration.")
+############################
+
+
 
 MODEL_GEMINI_2_5_FLASH = "gemini-2.5-flash"
 # More supported models can be referenced here: https://docs.litellm.ai/docs/providers/openai#openai-chat-completion-models
