@@ -2,5 +2,8 @@
 /agent_team/.env
 /multi_tool_agent/.env
 /my_agent/.env
+/agent_team_with_session/.env
 /agent_team/README.md
+/agent_team_with_session/README.md
 /my_agent/.idea/workspace.xml
+/agent_team/adk_tutorial.ipynb
