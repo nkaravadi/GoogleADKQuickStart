@@ -4,7 +4,7 @@ This guide walks you through setting up Python for working with the Google Agent
 It assumes you have these installed:
 - brew
 - IntelliJ
-
+  
 ---
 
 ## 1 Python Installation
@@ -29,7 +29,9 @@ pyenv install 3.11.9
 pyenv global 3.11.9
 ```
 If you get an error like "python-build: tmpdir=/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/t is set to a non-accessible location" while running pyenv install command, edit ~/.zshrc and add the following line:
+```bash
 export TMPDIR="$HOME/tmp"
+```
 
 Launch new terminal and run pyenv install
 
@@ -58,7 +60,7 @@ Intellij can be configured to use it for a project.
 
 ```bash
 # Activate environment
-adkenv\bin\activate
+source ./adkenv/bin/activate
 ```
 
 Check that the prompt looks like:
@@ -68,7 +70,7 @@ Check that the prompt looks like:
 
 ## 3. Install required packages
 
-In adkenv's cope run this:
+In adkenv's scope run this:
 
 ```bat
 pip install --upgrade pip
