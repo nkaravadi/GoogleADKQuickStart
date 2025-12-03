@@ -28,6 +28,10 @@ Install the version of python we like
 pyenv install 3.11.9
 pyenv global 3.11.9
 ```
+If you get an error like "python-build: tmpdir=/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/t is set to a non-accessible location" while running pyenv install command, edit ~/.zshrc and add the following line:
+export TMPDIR="$HOME/tmp"
+
+Launch new terminal and run pyenv install
 
 Verify
 ```bash
