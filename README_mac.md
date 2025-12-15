@@ -113,14 +113,14 @@ In primetime
 adk create <your_project>
 
 ```bash
-(primetime) nkaravadi@Nagas-MacBook-Pro-2 primetime % **adk create world_hello**
+(primetime) nkaravadi@Nagas-MacBook-Pro-2 primetime % adk create world_hello
 Choose a model for the root agent:
 1. gemini-2.5-flash
 2. Other models (fill later)
-Choose model (1, 2): **1**
+Choose model (1, 2): 1
 1. Google AI
 2. Vertex AI
-Choose a backend (1, 2): **2**
+Choose a backend (1, 2): 2
 ```
 
 ## 8. Deploy
@@ -132,3 +132,8 @@ adk deploy agent_engine \
     --staging_bucket gs://your-staging-bucket \
     world_hello
 ```
+
+## 9. See it in gcloud
+
+Look for "Agent Engine" in gcloud console search
+Click playground and test
