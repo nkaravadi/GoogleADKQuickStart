@@ -97,3 +97,12 @@ GOOGLE_API_KEY=<API-KEY>
 
 You can obtain your API key from:
 👉 [Google AI Studio](https://aistudio.google.com/app/api-keys)
+
+
+## 6. gcloud install
+brew install google-cloud-sdk
+
+gcloud auth login
+
+gcloud config set project PROJECT_ID 
+
