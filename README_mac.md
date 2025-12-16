@@ -97,3 +97,43 @@ GOOGLE_API_KEY=<API-KEY>
 
 You can obtain your API key from:
 👉 [Google AI Studio](https://aistudio.google.com/app/api-keys)
+
+
+## 6. gcloud install
+brew install google-cloud-sdk
+
+gcloud auth login
+
+gcloud config set project PROJECT_ID 
+
+
+## 7. To create a project
+In primetime
+
+adk create <your_project>
+
+```bash
+(primetime) nkaravadi@Nagas-MacBook-Pro-2 primetime % adk create world_hello
+Choose a model for the root agent:
+1. gemini-2.5-flash
+2. Other models (fill later)
+Choose model (1, 2): 1
+1. Google AI
+2. Vertex AI
+Choose a backend (1, 2): 2
+```
+
+## 8. Deploy
+
+```bash
+adk deploy agent_engine \
+    --project=ccibt-hack25ww7-750 \
+    --region=us-central1 \
+    --staging_bucket gs://your-staging-bucket \
+    world_hello
+```
+
+## 9. See it in gcloud
+
+Look for "Agent Engine" in gcloud console search
+Click playground and test
